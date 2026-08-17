@@ -1,0 +1,5 @@
+cluster,id,n_deploy,base_rate
+01.- ConHurtoPrevio,01,549,0.55
+02.- ConIrregularidadNoHurto,02,672,0.18
+03.- ConInspeccionesSinIrregularidad,03,1488,0.08
+04.- SinInspecciones,04,5320,0.03

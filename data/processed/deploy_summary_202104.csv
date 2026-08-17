@@ -1,0 +1,5 @@
+cluster,n_cuentas,score_medio,score_p50,score_p90,score_p99,score_max
+01.- ConHurtoPrevio,549,0.298,0.1619,0.7731,0.9339,0.9619
+02.- ConIrreg.NoHurto,672,0.4957,0.5607,0.8128,0.8555,0.8555
+03.- ConInsp.SinIrreg.,1488,0.7076,0.7242,0.8717,0.9342,0.9536
+04.- SinInspecciones,5320,0.7504,0.8835,0.9931,0.9991,0.9998

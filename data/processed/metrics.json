@@ -1,0 +1,438 @@
+{
+  "metadata": {
+    "fecha_despliegue": "2021-04-30",
+    "periodo_despliegue": 202104,
+    "modelo": "LGBMClassifier (4 modelos, uno por cluster)",
+    "version_modelos": "1.0.0-despliegue",
+    "total_deploy": 8029,
+    "seed": 2021
+  },
+  "results": {
+    "01.- ConHurtoPrevio": {
+      "n_features": 10,
+      "scale_pos_weight": 0.79,
+      "auc_validacion": 0.9808,
+      "n_deploy": 549
+    },
+    "02.- ConIrregularidadNoHurto": {
+      "n_features": 5,
+      "scale_pos_weight": 4.62,
+      "auc_validacion": 0.9163,
+      "n_deploy": 672
+    },
+    "03.- ConInspeccionesSinIrregularidad": {
+      "n_features": 8,
+      "scale_pos_weight": 11.1,
+      "auc_validacion": 0.9946,
+      "n_deploy": 1488
+    },
+    "04.- SinInspecciones": {
+      "n_features": 14,
+      "scale_pos_weight": 25.29,
+      "auc_validacion": 1.0,
+      "n_deploy": 5320
+    }
+  },
+  "feature_importance": {
+    "01.- ConHurtoPrevio": [
+      {
+        "feature": "notificaciones",
+        "importance": 3115.02
+      },
+      {
+        "feature": "casos_medidor_cambiado",
+        "importance": 2653.002
+      },
+      {
+        "feature": "consumos_dimi",
+        "importance": 2017.304
+      },
+      {
+        "feature": "insp_por_cuenta_marca",
+        "importance": 1333.657
+      },
+      {
+        "feature": "diff_cons_6m_12m",
+        "importance": 1030.881
+      },
+      {
+        "feature": "perc_recup_causal4_marca",
+        "importance": 932.349
+      },
+      {
+        "feature": "pro_cons_6m",
+        "importance": 455.078
+      },
+      {
+        "feature": "consumos_0",
+        "importance": 208.067
+      },
+      {
+        "feature": "cod_distrito",
+        "importance": 0.189
+      },
+      {
+        "feature": "id_marca",
+        "importance": 0.0
+      }
+    ],
+    "02.- ConIrregularidadNoHurto": [
+      {
+        "feature": "notif_causal1",
+        "importance": 78979.959
+      },
+      {
+        "feature": "efectividad_marca",
+        "importance": 50688.717
+      },
+      {
+        "feature": "diff_cons_6m_12m",
+        "importance": 33991.508
+      },
+      {
+        "feature": "tipo_fase_M",
+        "importance": 10786.486
+      }
+    ],
+    "03.- ConInspeccionesSinIrregularidad": [
+      {
+        "feature": "insp_pendientes",
+        "importance": 66881.759
+      },
+      {
+        "feature": "insp_efectivas",
+        "importance": 62334.073
+      },
+      {
+        "feature": "casos_fact_U",
+        "importance": 52658.625
+      },
+      {
+        "feature": "casos_medidor_manip",
+        "importance": 51646.795
+      },
+      {
+        "feature": "insp_por_cuenta_marca",
+        "importance": 39462.235
+      },
+      {
+        "feature": "barrido_perc_distrito",
+        "importance": 30617.392
+      },
+      {
+        "feature": "perc_notif_causal4_distrito",
+        "importance": 25971.115
+      },
+      {
+        "feature": "recup_prom_causal4_marca",
+        "importance": 22080.406
+      },
+      {
+        "feature": "recupero_set_alimentador",
+        "importance": 21936.215
+      },
+      {
+        "feature": "ratio_cons_potencia_12m",
+        "importance": 21618.795
+      },
+      {
+        "feature": "potencia",
+        "importance": 13605.446
+      },
+      {
+        "feature": "dist_pri_lectura",
+        "importance": 11601.445
+      },
+      {
+        "feature": "tiempo_ult_cambio_med",
+        "importance": 7404.527
+      },
+      {
+        "feature": "dist_med_interno",
+        "importance": 6269.449
+      },
+      {
+        "feature": "dist_ult_insp_efect",
+        "importance": 3477.256
+      },
+      {
+        "feature": "std_cons_6m",
+        "importance": 2225.737
+      },
+      {
+        "feature": "tipo_fase_M",
+        "importance": 1871.401
+      }
+    ],
+    "04.- SinInspecciones": [
+      {
+        "feature": "casos_medidor_manip",
+        "importance": 8540.249
+      },
+      {
+        "feature": "consumos_dimi",
+        "importance": 8167.969
+      },
+      {
+        "feature": "insp_por_cuenta_set",
+        "importance": 7321.141
+      },
+      {
+        "feature": "perc_notif_causal4_distrito",
+        "importance": 6931.134
+      },
+      {
+        "feature": "recupero_marca",
+        "importance": 6394.438
+      },
+      {
+        "feature": "recup_prom_set",
+        "importance": 6134.277
+      },
+      {
+        "feature": "min_diff",
+        "importance": 5689.939
+      },
+      {
+        "feature": "barrido_perc_marca",
+        "importance": 5025.438
+      },
+      {
+        "feature": "efectividad_distrito",
+        "importance": 4592.946
+      },
+      {
+        "feature": "diff_cons_6m_24m",
+        "importance": 4263.031
+      },
+      {
+        "feature": "insp_por_cuenta_distrito",
+        "importance": 4092.298
+      },
+      {
+        "feature": "perc_notif_causal4_marca",
+        "importance": 3907.491
+      },
+      {
+        "feature": "recup_prom_causal4_marca",
+        "importance": 3353.368
+      },
+      {
+        "feature": "insp_por_cuenta_marca",
+        "importance": 3254.898
+      },
+      {
+        "feature": "cv_cons_24m",
+        "importance": 2467.606
+      },
+      {
+        "feature": "notif_otros_causal_distrito",
+        "importance": 2149.848
+      },
+      {
+        "feature": "nro_notif_causal4_distrito",
+        "importance": 1401.116
+      },
+      {
+        "feature": "potencia",
+        "importance": 1387.981
+      },
+      {
+        "feature": "pro_cons_12m",
+        "importance": 976.34
+      },
+      {
+        "feature": "dist_pri_lectura",
+        "importance": 878.015
+      },
+      {
+        "feature": "std_cons_6m",
+        "importance": 690.939
+      },
+      {
+        "feature": "tipo_fase_M",
+        "importance": 405.96
+      },
+      {
+        "feature": "consumos_0",
+        "importance": 157.516
+      },
+      {
+        "feature": "longitud",
+        "importance": 0.799
+      }
+    ]
+  },
+  "precision_at_k": {
+    "01.- ConHurtoPrevio": {
+      "base_rate": 0.55,
+      "precision_at_10pct": 0.95,
+      "lift": 1.73,
+      "n_deploy": 549
+    },
+    "02.- ConIrregularidadNoHurto": {
+      "base_rate": 0.18,
+      "precision_at_10pct": 0.6836,
+      "lift": 3.8,
+      "n_deploy": 672
+    },
+    "03.- ConInspeccionesSinIrregularidad": {
+      "base_rate": 0.08,
+      "precision_at_10pct": 0.3414,
+      "lift": 4.27,
+      "n_deploy": 1488
+    },
+    "04.- SinInspecciones": {
+      "base_rate": 0.03,
+      "precision_at_10pct": 0.129,
+      "lift": 4.3,
+      "n_deploy": 5320
+    }
+  },
+  "segmentos": {
+    "clusters": [
+      {
+        "id": "01",
+        "name": "01.- ConHurtoPrevio",
+        "n": 549,
+        "base_rate": 0.55
+      },
+      {
+        "id": "02",
+        "name": "02.- ConIrregularidadNoHurto",
+        "n": 672,
+        "base_rate": 0.18
+      },
+      {
+        "id": "03",
+        "name": "03.- ConInspeccionesSinIrregularidad",
+        "n": 1488,
+        "base_rate": 0.08
+      },
+      {
+        "id": "04",
+        "name": "04.- SinInspecciones",
+        "n": 5320,
+        "base_rate": 0.03
+      }
+    ],
+    "total": 8029
+  },
+  "hiperparametros": {
+    "01.- ConHurtoPrevio": {
+      "n_estimators": 300,
+      "learning_rate": 0.075,
+      "subsample": 0.8,
+      "colsample_bytree": 0.9,
+      "reg_alpha": 15.0,
+      "reg_lambda": 20.0,
+      "max_depth": 3,
+      "min_child_samples": 50,
+      "num_leaves": 30,
+      "scale_pos_weight": 0.79,
+      "n_features": 10
+    },
+    "02.- ConIrregularidadNoHurto": {
+      "n_estimators": 300,
+      "learning_rate": 0.01,
+      "subsample": 0.85,
+      "colsample_bytree": 0.9,
+      "reg_alpha": 9.0,
+      "reg_lambda": 5.0,
+      "max_depth": 3,
+      "min_child_samples": 50,
+      "num_leaves": 30,
+      "scale_pos_weight": 4.62,
+      "n_features": 5
+    },
+    "03.- ConInspeccionesSinIrregularidad": {
+      "n_estimators": 400,
+      "learning_rate": 0.01,
+      "subsample": 0.85,
+      "colsample_bytree": 0.9,
+      "reg_alpha": 4.0,
+      "reg_lambda": 5.0,
+      "max_depth": 3,
+      "min_child_samples": 50,
+      "num_leaves": 30,
+      "scale_pos_weight": 11.1,
+      "n_features": 8
+    },
+    "04.- SinInspecciones": {
+      "n_estimators": 400,
+      "learning_rate": 0.09,
+      "subsample": 0.85,
+      "colsample_bytree": 0.9,
+      "reg_alpha": 4.0,
+      "reg_lambda": 5.0,
+      "max_depth": 3,
+      "min_child_samples": 50,
+      "num_leaves": 30,
+      "scale_pos_weight": 25.29,
+      "n_features": 14
+    }
+  },
+  "base_rate_operativo": {
+    "01.- ConHurtoPrevio": 0.55,
+    "02.- ConIrregularidadNoHurto": 0.18,
+    "03.- ConInspeccionesSinIrregularidad": 0.08,
+    "04.- SinInspecciones": 0.03
+  },
+  "group_contribution": {
+    "groups": [
+      "Cliente",
+      "Inspeccion",
+      "Contexto red",
+      "Consumo",
+      "Anomalias medidor"
+    ],
+    "clusters": [
+      {
+        "id": "01",
+        "name": "01.- ConHurtoPrevio"
+      },
+      {
+        "id": "02",
+        "name": "02.- ConIrregularidadNoHurto"
+      },
+      {
+        "id": "03",
+        "name": "03.- ConInspeccionesSinIrregularidad"
+      },
+      {
+        "id": "04",
+        "name": "04.- SinInspecciones"
+      }
+    ],
+    "matrix": [
+      [
+        0.0,
+        26.5,
+        19.3,
+        12.7,
+        41.5
+      ],
+      [
+        6.2,
+        45.3,
+        29.1,
+        19.5,
+        0.0
+      ],
+      [
+        5.2,
+        30.0,
+        31.7,
+        5.4,
+        27.7
+      ],
+      [
+        2.0,
+        0.0,
+        61.9,
+        16.0,
+        20.1
+      ]
+    ]
+  }
+}

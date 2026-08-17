@@ -1,0 +1,7 @@
+id_marca,marca,efectividad_marca,recup_prom_marca,insp_por_cuenta_marca,perc_recup_causal4_marca
+M1,Marca M1,0.146,37649.0,0.067,0.4892
+M2,Marca M2,0.1718,53951.0,0.1041,0.5006
+M3,Marca M3,0.1229,41089.0,0.2443,0.3058
+M4,Marca M4,0.0846,70537.0,0.102,0.2099
+M5,Marca M5,0.1277,85092.0,0.2101,0.2583
+M6,Marca M6,0.045,83577.0,0.2097,0.2553
